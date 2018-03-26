@@ -1,0 +1,54 @@
+.btnhome {
+  font-size:30px;
+}
+
+div.wrapper {
+  padding:20px;
+}
+
+button.btnans {
+  margin:
+  0.5rem 0rem;
+  padding: 35px;
+  cursor:pointer;
+}
+
+div.sidebar {
+  color:white;
+  width:100%;
+  height:100%;
+  padding:20px;
+}
+div.questions {
+  padding:20px;
+  border-radius:10px;
+  color:#fff;
+  font-size: 30px;
+}
+div.questions p {
+  padding:0;
+  margin:0;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.btn-block {
+  display: block;
+  width: 400px;
+}
+
+.quitButton {
+  display: block;
+  width: 100%;
+
+@media (max-width:425px) {
+  .btnhome{
+    font-size:30px;
+  }
+}
+
+honk {
+  font-size:30px;
+}

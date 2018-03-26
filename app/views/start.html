@@ -1,0 +1,59 @@
+<div class="container" ng-controller="StartCtrl">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="questions bg-primary">
+        <p>{{question}}</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="sidebar bg-primary">
+            <h4>Your Budget :
+            ${{budget}}</h4>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <a class="btn btn-danger quitButton" ui-sref="home">QUIT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="row">
+    <div class="col-md-9">
+      <!-- <div class="row">
+        <div class="col-md-6">
+          <button class="btn btnans btn-warning btn-block"><h2>Option 1</h2></button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btnans btn-warning btn-block"><h2>Option 2</h2></button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <button class="btn btnans btn-warning btn-block"><h2>Option 3</h2></button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btnans btn-warning btn-block"><h2>Option 4</h2></button>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-md-6" ng-repeat="btn in selectedAnswers">
+          <button class="btn btnans btn-warning btn-block" value="{{btn.value}}" ng-click="answer(btn)">
+            <h2>
+              {{btn.title}} <br>
+            ${{btn.value}}
+            </h2>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
